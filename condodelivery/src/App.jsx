@@ -1,12 +1,13 @@
 import {  } from 'react'
+import Aplication from './components/Aplication'
+import { Outlet } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-      <h1>Hello World</h1>
-      <h2>Nice to meet you!</h2>
-      <h3>Are you well</h3>
+      <Aplication/>
+      <Outlet/>
     </>
   )
 }

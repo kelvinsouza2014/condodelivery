@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-import Error from './Error.jsx'
+import Error from './routes/Error.jsx'
 import App from './App.jsx'
 import Login from './routes/Login.jsx'
 import Authentication_phone from './routes/Authentication_phone.jsx'
