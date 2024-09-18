@@ -6,7 +6,9 @@ function App() {
 
   return (
     <>
+      {/* COMPONENTE FIXO NA TELA PRINCIPAL (EM TODAS AS ROTAS) */}
       <Aplication/>
+      {/* COMPONENTE FIXO NA TELA PRINCIPAL (EM TODAS AS ROTAS) */}
       <Outlet/>
     </>
   )
