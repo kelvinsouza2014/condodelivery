@@ -14,7 +14,7 @@ function Login () {
   const handleSubmit = () => {
     if (user.current.value == 'Morador' && password.current.value == '12345') {
 
-      //Criando um token de autenticação
+      //Token de criptografia de senha
       let token = Math.random().toString(16).substring(2) +
                   Math.random().toString(16).substring(2)
 
