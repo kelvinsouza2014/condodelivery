@@ -12,9 +12,14 @@ function Login () {
   const getPassword = sessionStorage.getItem('password');
 
   const handleSubmit = () => {
-    if (user.current.value == 'Admin' && password.current.value == '12345') {
-    sessionStorage.setItem('user', 'Admin');
-    sessionStorage.setItem('password', '12345');
+    if (user.current.value == 'Morador' && password.current.value == '12345') {
+
+      //Criando um token de autenticação
+      let token = Math.random().toString(16).substring(2) +
+                  Math.random().toString(16).substring(2)
+
+      sessionStorage.setItem('user', 'Morador');
+      sessionStorage.setItem('password', token);
     } else {
       alert("Usuário ou senha invalido !")
     }
